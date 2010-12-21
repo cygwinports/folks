@@ -1,0 +1,42 @@
+--- origsrc/folks-0.2.1/backends/key-file/Makefile.am	2010-10-25 10:45:30.000000000 -0500
++++ src/folks-0.2.1/backends/key-file/Makefile.am	2010-12-16 22:43:37.078865400 -0600
+@@ -41,7 +41,7 @@ libfolks_backend_key_file_la_LIBADD = \
+ 	$(top_builddir)/folks/libfolks.la \
+ 	$(NULL)
+ 
+-libfolks_backend_key_file_la_LDFLAGS = -shared -fPIC -module -avoid-version
++libfolks_backend_key_file_la_LDFLAGS = -module -avoid-version -no-undefined
+ 
+ GITIGNOREFILES = \
+ 	folks-backend-key-file.vapi \
+--- origsrc/folks-0.2.1/backends/telepathy/Makefile.am	2010-10-25 10:45:31.000000000 -0500
++++ src/folks-0.2.1/backends/telepathy/Makefile.am	2010-12-16 22:43:56.747141000 -0600
+@@ -50,7 +50,7 @@ libfolks_backend_telepathy_la_LIBADD = \
+ 	lib/libfolks-telepathy.la \
+ 	$(NULL)
+ 
+-libfolks_backend_telepathy_la_LDFLAGS = -shared -fPIC -module -avoid-version
++libfolks_backend_telepathy_la_LDFLAGS = -module -avoid-version -no-undefined
+ 
+ GITIGNOREFILES = \
+ 	folks-backend-telepathy.vapi \
+--- origsrc/folks-0.2.1/backends/telepathy/lib/Makefile.am	2010-10-25 10:45:31.000000000 -0500
++++ src/folks-0.2.1/backends/telepathy/lib/Makefile.am	2010-12-16 23:40:10.817599400 -0600
+@@ -128,6 +128,7 @@ libfolks_telepathy_la_LIBADD = \
+ # that vim quickfix mode (:make) doesn't interpret the libtool --mode=link
+ # command as an error message in a bizarrely named file
+ libfolks_telepathy_la_LDFLAGS = \
++	-no-undefined \
+ 	-version-info "$(LT_CURRENT)":"$(LT_REVISION)":"$(LT_AGE)"
+ 
+ folks_telepathy_includedir = $(includedir)/folks
+--- origsrc/folks-0.2.1/folks/Makefile.am	2010-10-25 10:45:31.000000000 -0500
++++ src/folks-0.2.1/folks/Makefile.am	2010-12-16 22:42:40.065550300 -0600
+@@ -56,6 +56,7 @@ libfolks_la_LIBADD = \
+ # that vim quickfix mode (:make) doesn't interpret the libtool --mode=link
+ # command as an error message in a bizarrely named file
+ libfolks_la_LDFLAGS = \
++	-no-undefined \
+ 	-version-info "$(LT_CURRENT)":"$(LT_REVISION)":"$(LT_AGE)"
+ 
+ folksdir = $(includedir)/folks
