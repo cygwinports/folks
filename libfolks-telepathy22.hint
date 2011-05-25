@@ -1,5 +1,5 @@
 category: Gnome
-requires: libdbus1_3 libdbus-glib_1_2 libfolks1 libgee2 libglib2.0_0 libtelepathy-glib0
+requires: libdbus1_3 libdbus-glib_1_2 libfolks22 libgee2 libglib2.0_0 libintl8 libtelepathy-glib0
 external-source: folks
 sdesc: "GNOME metacontact aggregation library (Telepathy runtime)"
 ldesc: "libfolks is a library that aggregates people from multiple 

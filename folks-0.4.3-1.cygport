@@ -1,0 +1,15 @@
+inherit gnome2
+
+DESCRIPTION="GNOME metacontact aggregation library"
+
+PATCH_URI="0.4.3-no-undefined.patch"
+
+PKG_NAMES="folks libfolks22 libfolks-devel libfolks-telepathy22 libfolks-telepathy-devel
+           vala-folks vala-folks-telepathy"
+folks_CONTENTS="usr/bin/*.exe usr/share/doc/ usr/share/locale/"
+libfolks22_CONTENTS="usr/bin/cygfolks-22.dll usr/lib/folks/22/backends/key-file/"
+libfolks_telepathy22_CONTENTS="usr/bin/cygfolks-telepathy-22.dll usr/lib/folks/22/backends/telepathy/"
+libfolks_devel_CONTENTS="usr/include/folks/folks.h usr/lib/libfolks.* usr/lib/pkgconfig/folks.pc"
+libfolks_telepathy_devel_CONTENTS="usr/include/folks/folks-telepathy.h usr/lib/libfolks-telepathy.* usr/lib/pkgconfig/folks-telepathy.pc"
+vala_folks_CONTENTS="usr/share/vala/vapi/folks.*"
+vala_folks_telepathy_CONTENTS="usr/share/vala/vapi/folks-telepathy.*"

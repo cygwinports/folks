@@ -1,5 +1,5 @@
 category: Gnome
-requires: libfolks1 libgee-devel libglib2.0-devel
+requires: libfolks22 libgee-devel libglib2.0-devel
 external-source: folks
 sdesc: "GNOME metacontact aggregation library (core devel)"
 ldesc: "libfolks is a library that aggregates people from multiple 
