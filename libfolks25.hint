@@ -1,7 +1,7 @@
 category: Gnome
-requires: libfolks-telepathy22 libdbus1-devel libdbus-glib_1-devel libfolks-devel libgee-devel libglib2.0-devel libtelepathy-glib-devel
+requires: libebook1.2_12 libedataserver1.2_15 libgconf2_4 libgee2 libglib2.0_0 libsocialweb-client2 libtelepathy-glib0
 external-source: folks
-sdesc: "GNOME metacontact aggregation library (Telepathy development)"
+sdesc: "GNOME metacontact aggregation library (runtime)"
 ldesc: "libfolks is a library that aggregates people from multiple 
 sources (eg, Telepathy connection managers) to create metacontacts.
 This source distribution also builds a Telepathy backend and 

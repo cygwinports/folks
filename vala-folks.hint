@@ -1,5 +1,5 @@
 category: Gnome
-requires: libfolks-devel vala vala-gee1.0
+requires: vala vala-gee1.0
 external-source: folks
 sdesc: "GNOME metacontact aggregation library (Vala bindings)"
 ldesc: "libfolks is a library that aggregates people from multiple 

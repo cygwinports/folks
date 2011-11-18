@@ -1,7 +1,7 @@
 category: Gnome
-requires: libfolks-telepathy-devel vala-folks vala-telepathy-glib
+requires: libfolks25 girepository-Gee1.0 girepository-GLib2.0
 external-source: folks
-sdesc: "GNOME metacontact aggregation library (Telepathy Vala bindings)"
+sdesc: "GNOME metacontact aggregation library (GObject Introspection)"
 ldesc: "libfolks is a library that aggregates people from multiple 
 sources (eg, Telepathy connection managers) to create metacontacts.
 This source distribution also builds a Telepathy backend and 
