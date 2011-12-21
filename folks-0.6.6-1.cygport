@@ -7,7 +7,7 @@ PATCH_URI="0.6.5-no-undefined.patch
 
 PKG_NAMES="folks libfolks25 libfolks-devel girepository-Folks0.6 vala-folks"
 folks_CONTENTS="usr/bin/*.exe usr/share/doc/ usr/share/locale/"
-libfolks25_CONTENTS="usr/bin/*-25.dll usr/lib/folks/29/"
+libfolks25_CONTENTS="usr/bin/*-25.dll usr/lib/folks/"
 libfolks_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
 girepository_Folks0_6_CONTENTS="usr/*/gir*/Folks-0.6.*"
 vala_folks_CONTENTS="usr/share/vala/vapi/folks*"

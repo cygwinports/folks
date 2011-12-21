@@ -64,14 +64,14 @@
  	folks-backend-telepathy.vapi \
 --- origsrc/folks-0.6.5/backends/telepathy/lib/Makefile.am	2011-11-10 16:36:54.000000000 -0600
 +++ src/folks-0.6.5/backends/telepathy/lib/Makefile.am	2011-11-18 12:37:24.929426700 -0600
-@@ -40,6 +40,7 @@ libtp_lowlevel_la_CFLAGS = \
- libtp_lowlevel_la_LDFLAGS = \
- 	-shared -rpath $(libdir) \
- 	-avoid-version \
+@@ -144,6 +144,7 @@ libfolks_telepathy_la_LIBADD = \
+ libfolks_telepathy_la_LDFLAGS = \
+ 	-version-info "$(LT_CURRENT)":"$(LT_REVISION)":"$(LT_AGE)" \
+ 	-export-symbols-regex "^tpf_.*" \
 +	-no-undefined \
- 	$(GIO_LIBS) \
- 	$(GLIB_LIBS) \
- 	$(TP_GLIB_LIBS) \
+ 	$(NULL)
+ 
+ folks_telepathy_includedir = $(includedir)/folks
 --- origsrc/folks-0.6.5/backends/tracker/Makefile.am	2011-11-10 16:36:54.000000000 -0600
 +++ src/folks-0.6.5/backends/tracker/Makefile.am	2011-11-18 12:37:11.438655000 -0600
 @@ -54,7 +54,7 @@ tracker_la_LIBADD = \
