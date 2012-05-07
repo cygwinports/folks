@@ -1,5 +1,5 @@
 category: Gnome
-requires: libfolks25 libebook1.2-devel libedataserver1.2-devel libgconf2-devel libgee-devel libglib2.0-devel libsocialweb-devel libtelepathy-glib-devel
+requires: libfolks25 libedataserver1.2-devel libgconf2-devel libgee-devel libglib2.0-devel libsocialweb-devel libtelepathy-glib-devel
 external-source: folks
 sdesc: "GNOME metacontact aggregation library (development)"
 ldesc: "libfolks is a library that aggregates people from multiple 
