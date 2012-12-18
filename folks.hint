@@ -1,7 +1,0 @@
-category: Gnome
-requires: libfolks25 libgee2 libglib2.0_0 libintl8 libxml2
-sdesc: "GNOME metacontact aggregation library (utilities)"
-ldesc: "libfolks is a library that aggregates people from multiple 
-sources (eg, Telepathy connection managers) to create metacontacts.
-This source distribution also builds a Telepathy backend and 
-Telepathy-specific implementations of the libfolks classes."
