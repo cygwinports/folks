@@ -1,9 +1,9 @@
 inherit gnome2
 
 NAME="folks"
-VERSION=0.8.0
+VERSION=0.9.2
 RELEASE=1
-CATEGORY="GNOME"
+CATEGORY="Libs"
 SUMMARY="GNOME metacontact aggregation library"
 DESCRIPTION="libfolks is a library that aggregates people from multiple
 sources (eg, Telepathy connection managers) to create metacontacts.  This
