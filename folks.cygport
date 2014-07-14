@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="folks"
-VERSION=0.9.2
+VERSION=0.9.6
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME metacontact aggregation library"
@@ -16,7 +16,7 @@ libfolks25_REQUIRES="libfolks-common"
 libfolks25_CONTENTS="usr/bin/*-25.dll usr/lib/folks/"
 libfolks_common_CONTENTS="etc/ usr/share/doc/ usr/share/GConf/ usr/share/glib-2.0/"
 libfolks_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
-girepository_Folks0_6_CONTENTS="usr/*/gir*/Folks-0.6.*"
+girepository_Folks0_6_CONTENTS="usr/*/gir*/Folks*-0.6.*"
 vala_folks_CONTENTS="usr/share/vala/vapi/folks*"
 
 DIFF_EXCLUDES="gconf.path"
