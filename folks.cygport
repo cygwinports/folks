@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="folks"
-VERSION=0.9.6
+VERSION=0.10.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME metacontact aggregation library"
@@ -21,4 +21,13 @@ vala_folks_CONTENTS="usr/share/vala/vapi/folks*"
 
 DIFF_EXCLUDES="gconf.path"
 
+CYGCONF_ARGS="
+	--disable-fatal-warnings
+	--enable-eds-backend
+	--disable-bluez-backend
+	--disable-libsocialweb-backend
+	--enable-inspect-tool
+	--enable-vala
+	--enable-zeitgeist
+"
 MAKEOPTS+=" LDFLAGS=-no-undefined CPPFLAGS=-I\$(top_srcdir)"
