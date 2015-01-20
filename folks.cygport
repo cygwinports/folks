@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="folks"
-VERSION=0.10.0
+VERSION=0.10.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME metacontact aggregation library"
